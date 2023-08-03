@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        font-size: 80px;
+        color: rgb(21, 26, 118);
+        margin-top: 10px;
+    }
+    .contenedor {
+        border: 5px solid;
+        border-color: rgb(110, 24, 109);
+    }
+
+    #div1{
+        margin-top: 10px;
+        border: 10px solid;
+        border-color: green;
+    }
+
+    span{
+        font-size: 20px;
+        color: red;
+        font-family: cursive;
+    }
+    p > span {
+        color: #000000;
+        font-size: 30px;
+        border-color: blue;
+        border: solid;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    p>p>span{
+
+        border-color:  red;
+        border: solid 10px;
+    }
+
+</style>
+<!-- span es una palabra reservada del HTML la cual nos dice que es un elemento que 
+podemos usar para aplicarle estilos en alguna parte en especifico sin tener
+efectos secundarios, es decir, espacios,saltos,etc-->
+<body>
+    <div class="contenedor">
+        <h1>Titulo de la pagina</h1>
+        <p>Este es un párrafo del div</p>
+    </div>
+
+    <div id="div1">
+        <h1>Titulo de la pagina</h1>
+        <p>Este es un párrafo del div</p>
+
+        <p>Este párrafo es descendente
+            <span>texto1</span>
+        </p>
+
+        <p>
+            <p>
+                Texto2
+            </p>
+        </p>
+
+    </div>
+</body>
+</html>

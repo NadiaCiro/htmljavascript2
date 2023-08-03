@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <title>
+        "Maquetación de CSS"
+    </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script>
+        
+
+        for(let i=0;i<=20;i++){
+            console.log("este numero es "+i);
+        }
+        function sumar (){
+        let campo1 = document.getElementById("campo1").value;
+        let campo2 = document.getElementById("campo2").value;
+            let resultado = parseInt(campo1) + parseInt(campo2) ;
+            console.log(resultado);
+        }
+
+        function UnirNombre(nombres,apellidos){
+            let NombreUnido = nombres +" "+apellidos;
+            console.log(NombreUnido)
+        }
+        UnirNombre("Luciana","Velasquez");
+
+        function numeroParOimpaR(){
+            let campo3 = document.getElementById("campo3").value;
+            if(parseInt(campo3)%2==0){
+                console.log("El número "+parseInt(campor3)+" es par").value;
+            }else{
+                console.log("El número "+parseInt(campo3)+" es impar").value;
+            }
+            
+        }
+
+        function notasR{
+            
+        }
+
+        
+        
+
+    </script>
+</head>
+
+<body>
+    <div id="contenedorPadre">
+        <div id="cabezera">
+            <p style="margin-top: 0; color: black;font-weight: bold; font-size: 50px;">
+                cabezera
+            </p>
+        </div>
+
+        <div id="menu">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam qui asperiores laboriosam sint dignissimos
+                exercitationem nostrum consequatur nisi ut laudantium eaque aperiam vero, quae ea impedit, magni
+                temporibus commodi quis!</p>
+        </div>
+
+        <div id="izquierdaa">
+            <img alt="Aquí hay un gato" src="Sin título-1" height="220px">
+        </div>
+
+        <div id="derecha">
+            <table>
+                <thead>
+                    <th>
+                        cedula
+                    </th>
+                    <th>
+                        nombres
+                    </th>
+                    <th>
+                        apellido
+                    <th>
+                        correo
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            12345
+                        </td>
+                        <td>
+                            ema
+                        </td>
+                        <td>
+                            ciro
+                        </td>
+                        <td>
+                            ema@gmail.com
+                        </td>
+                    </tr>
+                    <!-- "tr" nos marca una fila -->
+                    <tr>
+                        <td>
+                            12346
+                        </td>
+                        <td>
+                            manuela
+                        </td>
+                        <td>
+                            ruiz
+                        </td>
+                        <td>
+                            manuela@gmail.com
+                        </td>
+                    </tr>
+    
+                </tbody>
+            </table>
+            <p><a href="https://www.facebook.com/" target ="_blank">Click aquí</a></p>
+            
+            <input type="text" id="campo1" name="campo1/">
+            <input type="text"id="campo2" name="campor2"/>
+
+            <button class="boton" onclick="sumar()" >
+                Click Sumar
+            </button>
+            <input type="text" id="campo3" name="campo3" class="input">
+            <button class ="pares" onclick="numeroParOimpaR()">
+                Par o Impar
+            </button>
+<!-- ---------------------------------------------- -->
+            <div class="tablero1">
+                <span id ="mostrartablero">Ay no se</span>
+            </div>
+
+            <input type="text" id = "maricada1" class="input"/>
+            <button class="boton" onclick="">
+                Notas
+            </button>
+
+            <!-- <iframe width="" height="315" src="https://www.youtube.com/embed/7hIqyCFasMk">
+
+            </iframe> -->
+            <!-- iframe nos permire insertar un código, es una página dentro de nuestra página -->
+        </div>
+
+        <div id="pie">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
